@@ -1,0 +1,71 @@
+html{
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $primary_background_color;
+}
+body{
+    font-family: $primary-font;
+    height: 100%;
+    color: $primary_heading_color;
+}
+h1{
+    font-size: 200px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: bounceInDown;
+}
+h2{
+    font-size: 100px;
+    text-align: center;
+    animation-duration: 3.5s;
+    animation-name: bounceInDown;
+}
+header{
+    background-image: url(../../img/header.jpeg);
+    height: 500px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: black;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+@keyframes bounceInDown{
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
